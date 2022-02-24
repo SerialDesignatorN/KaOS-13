@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="xterm.css"/>
+        <script src="xterm.js"></script>
+        <style>
+            * {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="terminal"></div>
+        <script>
+            var term = new Terminal({
+                cursorBlink: "block"
+            });
+            var curr_line = "";
+            var entries = [];
+            term.open(document.getElementById("terminal"));
+            term.write("kaos@kaos:~$ ");
+
+            
+            term.prompt = () => {
+                if (curr_line) {
+                let data = { method: "command", command: curr_line };
+                }
+            };
+            term.prompt();
+
+            // Receive data from soc
+
+            term.onKey(key => {
+                //Enter
+                if (key.keyCode === 13) {
+                if (curr_line) {
+                    entries.push(curr_line);
+                    term.write("\r\n");
+                    term.prompt();
+                }
+                } else if (key.keyCode === 8) {
+                // Backspace
+                if (curr_line) {
+                    curr_line = curr_line.slice(0, curr_line.length - 1);
+                    term.write("\b \b");
+                }
+                } else {
+                curr_line += key;
+                term.write(key);
+                }
+            });
+        </script>
+    </body>
+</html>
