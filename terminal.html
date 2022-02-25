@@ -1,54 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="xterm.css"/>
-        <script src="xterm.js"></script>
-        <style>
-            * {
-                margin: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="terminal"></div>
-        <script>
-            var term = new Terminal({
-                cursorBlink: "block"
-            });
-            var curr_line = "";
-            var entries = [];
-            term.open(document.getElementById("terminal"));
-            term.write("kaos@kaos:~$ ");
-
-            
-            term.prompt = () => {
-                if (curr_line) {
-                let data = { method: "command", command: curr_line };
-                }
-            };
-            term.prompt();
-
-            // Receive data from soc
-
-            term.onKey(key => {
-                //Enter
-                if (key.keyCode === 13) {
-                if (curr_line) {
-                    entries.push(curr_line);
-                    term.write("\r\n");
-                    term.prompt();
-                }
-                } else if (key.keyCode === 8) {
-                // Backspace
-                if (curr_line) {
-                    curr_line = curr_line.slice(0, curr_line.length - 1);
-                    term.write("\b \b");
-                }
-                } else {
-                curr_line += key;
-                term.write(key);
-                }
-            });
-        </script>
-    </body>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+</head>
+<body>
+</body>
+<script>
+$('body').terminal({
+  hello: function(name) {
+    this.echo('Hello, ' + name +
+      '. Welcome To The KaOS Terminal 1.0.');
+  },
+  add: function(num1, num2) {
+    this.echo(parseInt(num1) + parseInt(num2));
+  },
+  substract: function(num1, num2) {
+    this.echo(parseInt(num1) - parseInt(num2));
+  },
+  multiply: function(num1, num2) {
+    this.echo(parseInt(num1) * parseInt(num2));
+  },
+  divide: function(num1, num2) {
+    this.echo(parseInt(num1) / parseInt(num2));
+  },
+  epik: function() {
+    this.echo('drip');
+  },
+  about: function() {
+    this.echo('KaOS 13 Html Terminal');
+    this.echo('Version 1.0');
+    this.echo('(C) Kasius 2022');
+  },
+}, {
+  greetings: 'KaOS Terminal 1.0'
+});
+</script>
 </html>
