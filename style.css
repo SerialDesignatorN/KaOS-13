@@ -1,4 +1,4 @@
-html {
+* {
     cursor: url('medias/mouse.png'), auto;
 }
 body {
@@ -51,7 +51,8 @@ footer {
   float: left;
   bottom: 0;
   width: 100%;
-  background-color: #1d1d1d;
+background: rgb(49,49,49);
+background: linear-gradient(180deg, rgba(49,49,49,1) 0%, rgba(2,2,2,1) 100%);
   height: 40px;
   margin: 0;
   padding: 0;
@@ -60,12 +61,11 @@ footer {
     height: 0px;
     width: 0px;
     display: none;
-    animation: open 0.2s ease 0s 1 normal forwards;
+    animation: open 0.05s ease 0s 1 normal forwards;
 }
 .header {
    height: 30px;
    background-color: #1d1d1d;
-   cursor: url('medias/mouse.png'), auto;
    overflow: auto;
    border-radius: 5px 5px 0px 0px;
 }
@@ -75,7 +75,6 @@ footer {
    padding: 0;
    height: 450px;
    border-radius: 0px 0px 5px 5px;
-   cursor: url('medias/mouse.png'), auto;
 }
 @keyframes popup {
     0% {
@@ -117,7 +116,6 @@ footer {
     background-color: #1d1d1d;
     border: black solid 0px;
     font-family: Inter;
-    cursor: url('medias/mouse.png'), auto;
     border-radius: 0px;
     font-size: 12px;
     padding: 8px;
@@ -162,7 +160,6 @@ footer {
     background-color: #1d1d1d;
     height: 100%;
     width: 50px;
-    cursor: url('medias/mouse.png'), auto;
     border: black solid 0px;
     border-radius: 0px 5px 0px 0px;
     font-size: 20px;
@@ -173,31 +170,30 @@ footer {
 
 }
 .menubutton {
-    background-color: #1d1d1d;
+    background: rgb(49,49,49);
+background: linear-gradient(180deg, rgba(49,49,49,1) 0%, rgba(2,2,2,1) 100%);
     border: black solid 0px;
     padding: 8px;
     width: 40px;
     height: 40px;
     margin-left: 5px;
-    cursor: url('medias/mouse.png'), auto;
     vertical-align: middle;
     color: black;
     float: left;
     transition: all 0.2s ease;
 }
 .menubutton:hover {
-    background-color: #2e2e2e;
+    background: rgb(49,49,49);
+background: linear-gradient(180deg, rgba(49,49,49,1) 0%, rgba(2,2,2,1) 100%);
     padding: 10px;
     width: 40px;
     height: 40px;
-    cursor: url('medias/mouse.png'), auto;
     transition: all 0.2s ease;
 }
 .menubutton:active {
     padding: 8px;
     width: 40px;
     height: 40px;
-    cursor: url('medias/mouse.png'), auto;
     transition: all 0.2s ease;
 }
 li {
@@ -228,39 +224,40 @@ display: inline-block;
     font-family: Inter;
 }
 .sidebar{
-    height:20%;
+    height:18.75%;
 }
 .search {
     margin-top: auto;
     width: 98%;
-    background-color: #1d1d1d;
+    background-color: #232323;
+    border-radius: 5px;
     padding: 3px;
 }
 .search2 {
     width: 98%;
-    background-color: #1d1d1d;
+    background-color: #232323;
     padding: 3px;
+    border-radius: 5px;
 }
 .sidebar2 {
     height: 72.2%;
     width:306px;
     position:fixed!important;
     z-index:1;
-    animation: popup 0.4s ease 0s 1 normal none;
-    border-radius: 15px;
+    animation: popup 0.2s ease 0s 1 normal none;
+    border-radius: 5px 5px 0px 0px;
     overflow:auto;
     padding: 10px;
     color: #fff;
-    background-color: #1d1d1d;
+    background-color: #323232;
     display: none;
     flex-direction: column;
 }
 .menubutton2 {
-    background-color: #1d1d1d;
+    background-color: #323232;
     font-family: Inter;
     color: white;
     border: none;
-    cursor: url('medias/mouse.png'), auto;
     padding: 5px;
     border-radius: 3px;
     vertical-align: middle;
@@ -272,4 +269,9 @@ display: inline-block;
     background-color: #2e2e2e;
     transition: all 0.2s ease;
 }
-::file-selector-button { font-size: initial;}
+::file-selector-button { font-size: initial;     border: 1px white solid;
+    padding: 5px;
+    font-size: 9px;
+    color: #fff;
+    background-color: #1d1d1d;
+    border-radius: 5px;}

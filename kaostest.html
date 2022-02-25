@@ -13,7 +13,7 @@
 
 <div class="sidebar"></div>
 <div class="sidebar2" id="Sidebar">
-<div class="search2"><h1 style="text-align: center; font-family: Minecraft; vertical-align: middle;">User1</h1></div><br><br>
+<div class="search2"><h2 style="text-align: center; font-family: Minecraft; vertical-align: middle;">User1</h2></div><br>
 
 <button onclick="Closetestwindow2()" class="menubutton2"><img src="Icons/mememaker.png" style="height: 40px; width: 40px;"></img> Meme Maker</button><br>
 <button onclick="Closetestwindow3()" class="menubutton2"><img src="Icons/notes.png" style="height: 40px; width: 40px;"></img> Notes</button><br>
@@ -41,12 +41,12 @@
 
 <div class="window" id="window">
  <div class="header" style="width: 600px;"><button class="headertext">Files Beta</button><button onclick="Closetestwindow()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
- <div class="content"><iframe src="medias/" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe></div></div>
+ <div class="content"><iframe src="" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;" id="files"></iframe></div></div>
 
 
 <div class="window" id="window2">
 <div class="header" style="width: 600px;"><button class="headertext">Meme Maker</button><button onclick="Closetestwindow2()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
-<div class="content"><iframe src="apps/MEMEMAKER.html" id="mememaker" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px;"></iframe></div></div>
+<div class="content"><iframe src="" id="mememaker" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px;"></iframe></div></div>
 
 
 <div class="window" id="window3">
@@ -66,12 +66,12 @@
 
 <div class="window" id="window8">
 <div class="header" style="width: 800px;"><button class="headertext">Visual Studio Code</button><button onclick="CloseVSCode()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
-<div class="content"><iframe src="https://vscode.dev" id="store" width="800" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
+<div class="content"><iframe src="" id="vscode" width="800" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
 </div></div>
 
 <div class="window" id="window9">
 <div class="header" style="width: 720px;"><button class="headertext">Terminal</button><button onclick="CloseTerminal()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
-<div class="content"><iframe src="terminal.html" id="store" width="720" height="400" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white; overflow: hidden;"></iframe>
+<div class="content"><iframe src="" id="terminal" width="720" height="400" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white; overflow: hidden;"></iframe>
 </div></div>
 
 
@@ -117,11 +117,11 @@
 </footer>
 
 
-<script type="text/javascript" src="notifications.js"></script>
 
 <script>
 $( ".window" ).draggable({ handle: ".header" });
 </script>
 <script type="text/javascript" src="time.js"></script>
+<script type="text/javascript" src="notifications.js"></script>
 </body>
 </html>
