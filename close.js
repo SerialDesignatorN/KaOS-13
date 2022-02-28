@@ -12,7 +12,7 @@ function Closetestwindow2() {
   var x = document.getElementById("window2");
   if (x.style.display === "none") {
     x.style.display = "block";
-    var mememaker = document.getElementById("mememaker"); mememaker.src = ("apps/MEMEMAKER.html");
+    var mememaker = document.getElementById("mememaker"); mememaker.src = ("Apps/MEMEMAKER.html");
   } else {
     x.style.display = "none";
     var mememaker = document.getElementById("mememaker"); mememaker.src = ("");
