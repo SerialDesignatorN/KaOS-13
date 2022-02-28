@@ -1,8 +1,8 @@
 <html>
 <head><title>KaOS 13</title>
 <!--Scripts-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script src="https://kit.fontawesome.com/970a0290cd.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="close.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -50,8 +50,8 @@
 
 
 <div class="window" id="window3">
-<div class="header" style="width: 600px;"><button class="headertext">Notes</button><button onclick="Closetestwindow3()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
-<div class="content"><textarea style="border-radius: 0px 0px 5px 5px; border: black solid 0px; width: 600; height: 450; resize: none; opacity: .95;"></textarea></div></div>
+<div class="header" style="width: 600px;"><button class="headertext" onclick="saveTXT()">Notes</button><button onclick="Closetestwindow3()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
+<div class="content"><textarea id="msg" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; width: 600; height: 450; resize: none; opacity: .85; background-color: #1d1d1d; backdrop-filter: blur(20px); color: white; font-family: arial; font-size: 15px; padding: 5px;" ></textarea></div></div>
 
 
 <div class="window" id="window4">
@@ -61,7 +61,7 @@
 
 <div class="window" id="window5">
 <div class="header" style="width: 600px;"><button class="headertext">Store</button><button onclick="Closetestwindow5()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
-<div class="content"><iframe src="store.html" id="store" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
+<div class="content"><iframe src="" id="store" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
 </div></div>
 
 <div class="window" id="window8">
@@ -120,6 +120,30 @@
 
 <script>
 $( ".window" ).draggable({ handle: ".header" });
+</script>
+<script type="text/javascript">
+    let saveTXT = () => {
+        const msg = document.getElementById('msg');
+        let data = 
+            '' + msg.value;
+        
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'Project.TXT';
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
 </script>
 <script type="text/javascript" src="time.js"></script>
 <script type="text/javascript" src="notifications.js"></script>
