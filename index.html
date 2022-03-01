@@ -13,36 +13,29 @@
 .options {
 	height: 100%;
 	width: 100%;
-	padding: 15px;
-	box-shadow: 2.5px 2.5px black;
-	background-color: transparent;
-}
-.blur {
-	background-image: url("bg.jpg");
-	display: block !important;
-	filter: blur(15px);
-	background-size: cover;
-	height: 100%;
-	z-index: 0;
-	background-repeat: no-repeat;
-	top: -248px;
-	position: relative;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 section {
 	height: 100%;
 	width: 100%;
 	z-index: 2;
 	background-color: #1d1d1d;
+	background-image: url("bg.jpg");
 }
 button {
 	padding: 5px;
 	float: middle;
 	font-weight: bold;
 	width: 89.31;
-	background-color: #1d1d1d;
 	border-radius: 5px;
-	border: white solid 1px;
+	border: black solid 1px;
 	transition: all 0.2s ease;
+	z-index: 1;
+	position: relative;
+	color: black;
 }
 nav {
 	display: inline-block;
@@ -54,36 +47,62 @@ li {
 button:hover {
 	background-color: #2e2e2e;
 	transition: all 0.2s ease;
+	color: white;
+	border: white solid 1px;
 }
-
+.block {
+	height: 50px;
+	width: 50px;
+	background: #fff;
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+	border-radius: 10px;
+	opacity: .85;
+	filter: blur(1px);
+}
+.block:nth-child(3n + 2)
+{
+	background: #444;
+}
+.block:nth-child(3n + 3)
+{
+	background: #FF9213;
+}
 </style>
 </head>
-<body><section>
+<body><section class="container">
 	<div class="options">
-		<H1 style="font-size: 25px; text-align: center;" id="text">Sign in</H1><br><br><br><br><br><br><br><br><br>
+		
 		<nav><ul>
 		<li><a href="kaostest.html"><button onmouseover="loginuser1()"><img src="Icons/user.png" style="height: 52; width: 58;"></img>User1</button></a>&nbsp;</li>
-		<li><button onmouseover="loginuser2()"><img src="Icons/notes.png"></img>User2</button>&nbsp;</li>
 		<li><a href="guest.html"><button onmouseover="loginguest()"><img src="Icons/guest.png" style="height: 52; width: 58;"></img>Guest</button></a>&nbsp;</li>
-		<li><button onclick="beta()"><img src="Icons/KASIUSGAMES.png" style="height: 52; width: 58;"></img>BetaTesting</button></li>
-		</ul></nav><br><br><br><br><br><br><br>
-		
-<script>
-function beta() {
-window.alert("No Beta Updates Found!");
-}
-function loginuser1() {
-document.getElementById("text").innerHTML = "Welcome, User1!";
-}
-function loginuser2() {
-document.getElementById("text").innerHTML = "Welcome, User2!";
-}
-function loginguest() {
-document.getElementById("text").innerHTML = "Welcome, Guest!";
-}
+		</ul></nav></div>
+
+<script type="text/javascript" src="animate.js"></script>
+<script type="text/javascript">
+	const container = document.querySelector('.container');
+	for ( var i = 1; i<=1000; i++){
+		const blocks = document.createElement('div')
+		blocks.classList.add('block');
+		container.appendChild(blocks);
+	}
+
+	function generate(){
+		anime({
+			targets: '.block',
+			translateX : function(){
+				return anime.random(-1000, 1000)
+			},
+			translateY : function(){
+				return anime.random(-1000, 1000)
+			},
+			scale: function(){
+				return anime.random(1, 5)
+			}
+		})
+	}
+
+	generate()
 </script>
-
-
-	</div></section>
+</section>
 </body>
 </html>
