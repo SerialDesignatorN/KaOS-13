@@ -5,7 +5,7 @@ function Closetestwindow() {
     var files = document.getElementById("files"); files.src = ("medias/");
   } else {
     x.style.display = "none";
-    var files = document.getElementById("files"); files.src = ("");
+    var files = document.getElementById("files"); files.src = ("medias/");
   }
 }
 function Closetestwindow2() {
@@ -15,7 +15,7 @@ function Closetestwindow2() {
     var mememaker = document.getElementById("mememaker"); mememaker.src = ("Apps/MEMEMAKER.html");
   } else {
     x.style.display = "none";
-    var mememaker = document.getElementById("mememaker"); mememaker.src = ("");
+    var mememaker = document.getElementById("mememaker"); mememaker.src = ("Apps/MEMEMAKER.html");
   }
 }
 function Closetestwindow3() {
@@ -74,7 +74,7 @@ function CloseVSCode() {
     var vscode = document.getElementById("vscode"); vscode.src = ("https://vscode.dev");
   } else {
     x.style.display = "none";
-    var vscode = document.getElementById("vscode"); vscode.src = ("");
+    var vscode = document.getElementById("vscode"); vscode.src = ("https://vscode.dev");
   }
 }
 function CloseTerminal() {
@@ -84,7 +84,7 @@ function CloseTerminal() {
     var terminal = document.getElementById("terminal"); terminal.src = ("terminal.html");
   } else {
     x.style.display = "none";
-    var terminal = document.getElementById("terminal"); terminal.src = ("");
+    var terminal = document.getElementById("terminal"); terminal.src = ("terminal.html");
   }
 }
 function NotificationMenu() {
