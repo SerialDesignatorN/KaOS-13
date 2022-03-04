@@ -26,10 +26,10 @@ function color1() {
   document.getElementById("header").style.backgroundColor = "#1d1d1d";
 }
 function color2() {
-  document.getElementById("header").style.backgroundColor = "red";
+  document.getElementById("style").href = "tablet.css";
 }
 function color3() {
-  document.getElementById("header").style.backgroundColor = "green";
+  document.getElementById("style").href = "style.css";
 }
 function color4() {
   document.getElementById("header").style.backgroundColor = "lightgray";
