@@ -58,7 +58,6 @@ background: linear-gradient(180deg, rgba(49,49,49,1) 0%, rgba(2,2,2,1) 100%);
   padding: 0;
      opacity: .85;
    backdrop-filter: blur(10px);
-   webkit-backdrop-filter: blur(10px);
 }
 .window {
     height: 0px;
@@ -259,7 +258,6 @@ display: inline-block;
     flex-direction: column;
     opacity: .85;
    backdrop-filter: blur(10px);
-   webkit-backdrop-filter: blur(10px);
 }
 .menubutton2 {
     background-color: #323232;
@@ -290,7 +288,6 @@ display: inline-block;
 .settingssidebar {
        opacity: .75;
    backdrop-filter: blur(10px);
-   webkit-backdrop-filter: blur(10px);
 }
 .menubutton2 img {
     border-radius: 5px
