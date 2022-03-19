@@ -183,7 +183,8 @@ background: rgb(49,49,49);
     height: 40px;
     margin-left: 5px;
     vertical-align: middle;
-    color: black;
+    color: white;
+    font-size: 20px;
     float: left;
     transition: all 0.2s ease;
 }
