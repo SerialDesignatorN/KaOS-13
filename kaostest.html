@@ -11,7 +11,29 @@
 </head>
 <body id="body">
 
-<div class="sidebar"></div>
+<div class="sidebar">
+    <div class="KasiusTalk" id="Kaostalk"><h3>Kasius Talk (Beta)</h3></div>
+    <div class="Userview" id="Userview">
+        <h3>Users</h3>
+        <img src="Icons/user.png" title="User1 (Currently Using...)">
+        <img src="Icons/guest.png" title="Guest (Limited User!)">
+    </div>
+    <div class="searchmenu" id="searchbar"><input id="searchbar2" onkeyup="find()">
+    <ol id='list2'>
+        <li class="item" onclick="Closetestwindow2()">MemeMaker</li><br>
+        <li class="item" onclick="Closetestwindow3()">Notes</li><br>
+        <li class="item" onclick="Closetestwindow()">Files</li><br>
+        <li class="item" onclick="Closetestwindow8()">KaosVm</li><br>
+        <li class="item" onclick="Closetestwindow4()">Media</li><br>
+        <li class="item" onclick="Closetestwindow5()">Store</li><br>
+        <li class="item" onclick="CloseVSCode()">Visual Studio Code</li><br>
+        <li class="item" onclick="CloseTerminal()">Terminal</li><br>
+        <li class="item" onclick="Closetestwindow6()">Settings</li><br>
+        <li class="item" onclick="Closetestwindow7()">About</li><br>
+    </ol>
+    <script type="text/javascript" src="finder.js"></script>
+    </div>
+</div>
 <div class="sidebar2" id="Sidebar">
 <div class="search2"><h2 style="text-align: center; font-family: Minecraft; vertical-align: middle;">User1</h2></div><br>
 
@@ -22,7 +44,9 @@
 <button onclick="Closetestwindow4()" class="menubutton2"><img src="Icons/media.png" style="height: 40px; width: 40px;"></img> Media</button><br>
 <button onclick="Closetestwindow5()" class="menubutton2"><img src="Icons/Store.png" style="height: 40px; width: 40px;"> Store</img></button><br>
 <button onclick="CloseVSCode()" class="menubutton2"><img src="Icons/vscode.png" style="height: 40px; width: 40px;"></img> Visual Studio Code</button><br>
-<button onclick="CloseTerminal()" class="menubutton2"><img src="Icons/terminal.png" style="height: 40px; width: 40px;"></img> Terminal</button><div class="search">
+<button onclick="CloseTerminal()" class="menubutton2"><img src="Icons/terminal.png" style="height: 40px; width: 40px;"></img> Terminal</button><br>
+
+<div class="search">
 <p id="span"></p>&nbsp;
 <button style="width: 6%; background-color: transparent; color: white; vertical-align: middle; border: black solid 0px;" onclick="NotificationMenu()"><i class="fa-solid fa-bell"></i></button>&nbsp;
 <button style="width: 6%; background-color: transparent; color: white; vertical-align: middle; border: black solid 0px;" onclick="Closetestwindow6()"><i class="fa-solid fa-gear"></i></button>&nbsp;
@@ -110,9 +134,9 @@
 
 <footer>
 <button onclick="menu()" class="menubutton"><img src="logo.svg" style="height: 24px; width: 24px; fill: white;"></img></button>&nbsp;
-<button class="menubutton"><i class="fa-solid fa-magnifying-glass"></i></button>&nbsp;
-<button class="menubutton"><i class="fa-solid fa-microphone"></i></button>&nbsp;
-<button class="menubutton"><i class="fa-solid fa-window-restore"></i></button>
+<button class="menubutton" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>&nbsp;
+<button class="menubutton" onclick="Kasiustalk()"><i class="fa-solid fa-microphone"></i></button>&nbsp;
+<button class="menubutton" onclick="Userview()"><i class="fa-solid fa-window-restore"></i></button>
 <nav><ul>
 <li><button onclick="Closetestwindow2()" class="menubutton"><img src="Icons/mememaker.png" style="height: 24px; width: 24px;"></img>&nbsp;&nbsp;</button></li>
 <li><button onclick="Closetestwindow3()" class="menubutton"><img src="Icons/notes.png" style="height: 24px; width: 24px;"></img>&nbsp;&nbsp;</button></li>

@@ -294,3 +294,44 @@ display: inline-block;
 .menubutton2 img {
     border-radius: 5px
 }
+.searchmenu {
+    background-color: #323232;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 15px 5px black;
+    overflow: auto;
+    color: white;
+    display: none;
+    opacity: .90;
+    animation: popup 0.2s ease 0s 1 normal none;
+}
+.searchmenu input {
+    padding: 5px;
+    border-radius: 5px;
+    width: 500px;
+}
+#list2 {
+    padding-left: 45%;
+}
+.Userview {
+    background-color: #323232;
+    padding: 5px;
+    color: white;
+    box-shadow: 0px 15px 5px black;
+    opacity: .90;
+    animation: popup 0.2s ease 0s 1 normal none;
+    display: none;
+}
+.Userview img {
+    width: 58px;
+    height: 52px;
+}
+.KasiusTalk {
+    background-color: #323232;
+    padding: 5px;
+    box-shadow: 0px 15px 5px black;
+    opacity: .90;
+    animation: popup 0.2s ease 0s 1 normal none;
+    display: none;
+    color: white;
+}

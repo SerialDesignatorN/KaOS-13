@@ -95,3 +95,27 @@ function NotificationMenu() {
     x.style.display = "none";
   }
 }
+function search() {
+  var x = document.getElementById("searchbar");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function Userview() {
+  var x = document.getElementById("Userview");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function Kasiustalk() {
+  var x = document.getElementById("Kaostalk");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
