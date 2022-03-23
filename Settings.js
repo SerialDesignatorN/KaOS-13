@@ -23,14 +23,14 @@ function custom_bg(event) {
 //Color scheme
 
 function color1() {
-  document.getElementById("header").style.backgroundColor = "#1d1d1d";
+  document.getElementById("style").href = "style.css";
 }
 function color2() {
   document.getElementById("style").href = "tablet.css";
 }
 function color3() {
-  document.getElementById("style").href = "style.css";
+  document.getElementById("style").href = "https://zeankundev.github.io/KaOS/style.css";
 }
 function color4() {
-  document.getElementById("header").style.backgroundColor = "lightgray";
+  document.getElementById("style").href = "classic.css";
 }
