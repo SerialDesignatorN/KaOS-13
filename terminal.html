@@ -153,6 +153,23 @@ $('body').terminal({
         }, 3000);
     }
   },
+  ping: function(name) {
+    this.echo('Pinged ' + name + ' In 69ms' );
+    this.echo('Pinged ' + name + ' In 42ms' );
+    this.echo('Pinged ' + name + ' In 76ms' );
+    this.echo('Pinged ' + name + ' In 15ms' );
+    this.echo('Pinged ' + name + ' In 95ms' );
+    this.echo('Succesfully pinged ' + name + ' 5 Times!' );
+  },
+  hack: function(name) {
+    this.echo('Hacked Server 1 Of ' + name );
+    this.echo('Hacked Server 2 Of ' + name );
+    this.echo('Hacked Server 3 Of ' + name );
+    this.echo('Hacked Server 4 Of ' + name );
+    this.echo('Hacked Server 5 Of ' + name );
+    this.echo('' );
+    this.echo('Access Granted!' );
+  },
   about: function() {
     this.echo('KaOS 13 Html Terminal');
     this.echo('Version 1.0');
