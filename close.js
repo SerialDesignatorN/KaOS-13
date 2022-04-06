@@ -67,6 +67,26 @@ function Closetestwindow7() {
     x.style.display = "none";
   }
 }
+function weather() {
+  var x = document.getElementById("weather");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("weatherframe").src = ("weather/index.html");
+  } else {
+    x.style.display = "none";
+    document.getElementById("weatherframe").src = ("");
+  }
+}
+function lookeloo() {
+  var x = document.getElementById("lookeloo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("movie").src = ("https://zeankundev.github.io/lookeeloo-web/");
+  } else {
+    x.style.display = "none";
+    document.getElementById("movie").src = ("");
+  }
+}
 function CloseVSCode() {
   var x = document.getElementById("window8");
   if (x.style.display === "none") {

@@ -45,6 +45,8 @@
 <button onclick="Closetestwindow5()" class="menubutton2"><img src="Icons/Store.png" style="height: 40px; width: 40px;"> Store</img></button><br>
 <button onclick="CloseVSCode()" class="menubutton2"><img src="Icons/vscode.png" style="height: 40px; width: 40px;"></img> Visual Studio Code</button><br>
 <button onclick="CloseTerminal()" class="menubutton2"><img src="Icons/terminal.png" style="height: 40px; width: 40px;"></img> Terminal</button><br>
+<button onclick="weather()" class="menubutton2"><img src="weather/icons/02d.png" style="height: 40px; width: 40px;"></img> Weather</button><br>
+<button onclick="lookeloo()" class="menubutton2"><img src="Icons/logo.png" style="height: 40px; width: 40px;"></img> Lookeloo</button><br>
 
 <div class="search">
 <p id="span"></p>&nbsp;
@@ -66,12 +68,12 @@
 
 <div class="window" id="window">
  <div class="header"><button class="headertext">Files Beta</button><button onclick="Closetestwindow()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
- <div class="content"><iframe src="" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;" id="files"></iframe></div></div>
+ <div class="content"><iframe src="medias/" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;" id="files"></iframe></div></div>
 
 
 <div class="window" id="window2">
 <div class="header"><button class="headertext">Meme Maker</button><button onclick="Closetestwindow2()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
-<div class="content"><iframe src="" id="mememaker" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px;"></iframe></div></div>
+<div class="content"><iframe src="Apps/MEMEMAKER.html" id="mememaker" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px;"></iframe></div></div>
 
 
 <div class="window" id="window3">
@@ -91,18 +93,28 @@
 
 <div class="window" id="window8">
 <div class="header"><button class="headertext">Visual Studio Code</button><button onclick="CloseVSCode()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
-<div class="content"><iframe src="" id="vscode" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
+<div class="content"><iframe src="https://vscode.dev" id="vscode" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
 </div></div>
 
 <div class="window" id="window9">
 <div class="header"><button class="headertext">Terminal</button><button onclick="CloseTerminal()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
-<div class="content"><iframe src="" id="terminal" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white; overflow: hidden;"></iframe>
+<div class="content"><iframe src="terminal.html" id="terminal" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white; overflow: hidden;"></iframe>
 </div></div>
 
 
 <div class="window" id="window7">
 <div class="header"><button class="headertext">About</button><button onclick="Closetestwindow7()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
 <div class="content"><iframe src="version.html" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
+</div></div>
+
+<div class="window" id="weather">
+<div class="header"><button class="headertext">Weather</button><button onclick="weather()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
+<div class="content"><iframe src="Apps/MEMEMAKER.html" id="weatherframe" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
+</div></div>
+
+<div class="window" id="lookeloo">
+<div class="header"><button class="headertext">Lookeloo</button><button onclick="lookeloo()" class="closebutton"><i class="fa-solid fa-xmark"></i></button></div>
+<div class="content"><iframe src="Apps/MEMEMAKER.html" id="movie" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
 </div></div>
 
 <div class="window" id="window6">
