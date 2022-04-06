@@ -87,6 +87,16 @@ function lookeloo() {
     document.getElementById("movie").src = ("");
   }
 }
+function Closetestwindow8() {
+  var x = document.getElementById("VM");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("VMFRAME").src = ("https://zeankundev.github.io/KaOS-VM/");
+  } else {
+    x.style.display = "none";
+    document.getElementById("VMFRAME").src = ("");
+  }
+}
 function CloseVSCode() {
   var x = document.getElementById("window8");
   if (x.style.display === "none") {
